@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #005f73;
+}
+
+/* Contenedor general */
+.señor {
+    display: flex;
+    justify-content: center;
+}
+
+.hijo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* Tarjetas de platos */
+.nieto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nieto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.nieto h2 {
+    margin-bottom: 15px;
+    color: #0a9396;
+    font-size: 1.5em;
+}
+
+/* Imágenes de platos */
+.nieto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Lista descriptiva */
+.nieto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.nieto li {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hijo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nieto {
+        width: 90%;
+    }
+}

@@ -1,0 +1,119 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo del documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #1e3d59;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #3c6e71;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Título principal */
+main > h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #1e3d59;
+}
+
+/* Cada sección (ul) de maravilla */
+main ul {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    list-style: disc inside;
+}
+
+main ul h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #3c6e71;
+}
+
+main ul p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+main ul li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #1e3d59;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > h1 {
+        font-size: 2em;
+    }
+
+    main ul {
+        padding: 15px;
+    }
+
+    main ul h1 {
+        font-size: 1.5em;
+    }
+}
